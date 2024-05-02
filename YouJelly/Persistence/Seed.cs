@@ -23,7 +23,7 @@ namespace Persistence
                     Visibility = "Public",
                     Rating = "4.6",
                     Tags = "Tag1",
-                    filePath = "/videos/sample.mp4"
+                    filePath = "sample.mp4"
 
                 },
                 new Video
@@ -35,6 +35,7 @@ namespace Persistence
                     Visibility = "Public",
                     Rating = "4.5",
                     Tags = "Tag2",
+                    filePath = "Banned and Controversial Foods (480p).mp4"
                 },
                 new Video
                 {
@@ -45,6 +46,7 @@ namespace Persistence
                     Visibility = "Public",
                     Rating = "4.5",
                     Tags = "Tag3",
+                    filePath = "Presidential Pets_ a Brief History (480p).mp4"
                 },
                 new Video
                 {
@@ -55,6 +57,7 @@ namespace Persistence
                     Visibility = "Public",
                     Rating = "4.5",
                     Tags = "Tag4",
+                    filePath = "Texas Rangers vs. Comanche Warriors _ The Trinity River Massacre (360p).mp4"
                 },
                 new Video
                 {
@@ -65,6 +68,7 @@ namespace Persistence
                     Visibility = "Public",
                     Rating = "4.5",
                     Tags = "Tag5",
+                    filePath = "Why The Internet Archive Is In Danger Right Now... (360p).mp4"
                 },
                 new Video
                 {
@@ -75,6 +79,7 @@ namespace Persistence
                     Visibility = "Public",
                     Rating = "4.5",
                     Tags = "Tag6",
+                    filePath = "Zero Day Bug Found in Popular Firewalls (720p60).mp4"
                 }
             };
 

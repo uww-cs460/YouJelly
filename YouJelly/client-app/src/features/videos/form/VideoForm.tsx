@@ -43,6 +43,7 @@ export default function VideoForm({Video: selectedVideo, closeForm, createOrEdit
                 <Form.TextArea placeholder='Description' value={Video.description} name='description' onChange={handleInputChange} />
                 <Form.Input placeholder='Category' value={Video.category} name='category' onChange={handleInputChange} />
                 <Form.Input type='date' placeholder='Date' value={Video.date} name='date' onChange={handleInputChange} />
+                <Form.Input type='filePath' value={Video.filePath} name='filePath' onChange={handleInputChange} />
                 <Button loading={submitting} floated='right' positive type='submit' content='Submit' />
                 <Button onClick={closeForm} floated='right' type='button' content='Cancel' />
             </Form>
