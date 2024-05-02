@@ -29,6 +29,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseRouting();
+
 app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
@@ -50,7 +52,7 @@ try
 
     // Asynchronous - wait until database is updated and then migrate database and seed data (if needed)
 
-    //await context.Database.MigrateAsync();
+    await context.Database.MigrateAsync();
     await Seed.SeedData(context);
 }
 catch (Exception ex)
