@@ -24,18 +24,7 @@ namespace Application.Videos
 
             public async Task<List<Video>> Handle(Query request, CancellationToken cancellationToken)
             {
-                try{
-                    for (var i = 0; i < 10; i++)
-                    {
-                        cancellationToken.ThrowIfCancellationRequested();
-                        await Task.Delay(80, cancellationToken);
-                        _logger.LogInformation($"Task {i} has completed");
-                    }
-                }
-                catch (System.Exception)
-                {
-                    _logger.LogInformation("Task was cancelled");
-                }
+
 
                 return await _context.Videos.ToListAsync();
             }
