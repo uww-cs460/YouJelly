@@ -9,8 +9,8 @@ export default function NavBar({openForm}: Props) {
         <Menu inverted fixed='top'>
             <Container>
                 <Menu.Item header>
-                    <img src="/assets/YouJelly.png" alt="logo" style={{marginRight: '10px'}}/>
-                    Revideos
+                    <img src="YouJelly.png" alt="logo" style={{marginRight: '10px'}}/>
+                    YouJelly
                 </Menu.Item>
                 <Menu.Item name='videos' />
                 <Menu.Item>
