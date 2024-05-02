@@ -1,4 +1,4 @@
-# dotnet_react
+# YouJelly
 
 Uses the Model-View-Controller (MVP) design pattern. Each heading and subheading relates to a project and folder, respectively.
 
