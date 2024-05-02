@@ -44,6 +44,9 @@ namespace Persistence.Migrations
                     b.Property<string>("Visibility")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("filePath")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Videos");
