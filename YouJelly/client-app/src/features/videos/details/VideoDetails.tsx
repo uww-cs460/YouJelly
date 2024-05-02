@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, CardDescription, CardHeader, CardMeta, Image } from 'semantic-ui-react';
+import { Button, Card, CardContent, CardDescription, CardHeader, CardMeta } from 'semantic-ui-react';
 import { Video } from '../../../app/models/video';
 
 //this has the potential to be a comment, tag, rate function instead of the activities details idea

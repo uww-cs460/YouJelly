@@ -33,7 +33,11 @@ app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapControllers();
+app.MapFallbackToController("Index", "Fallback");
 
 // Using keyword is automatic garbage collection
 
@@ -46,7 +50,7 @@ try
 
     // Asynchronous - wait until database is updated and then migrate database and seed data (if needed)
 
-    await context.Database.MigrateAsync();
+    //await context.Database.MigrateAsync();
     await Seed.SeedData(context);
 }
 catch (Exception ex)
