@@ -11,7 +11,7 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240429225310_InitialCreate")]
+    [Migration("20240502044015_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -45,6 +45,9 @@ namespace Persistence.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Visibility")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("filePath")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
